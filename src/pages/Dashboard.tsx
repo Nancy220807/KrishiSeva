@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { GnaniLogo, Mem0Logo, KeployLogo, OutlierLogo, AlchemystLogo, StartupNewsLogo } from "../components/PartnerLogos";
 import { NewsSidebar } from "../components/NewsSidebar";
+import { FeedbackForm } from "../components/FeedbackForm";
 
 interface DashboardProps {
   onNavigate: (page: string) => void;
@@ -198,6 +199,11 @@ export function Dashboard({ onNavigate }: DashboardProps) {
             })}
           </div>
         </div>
+      </div>
+
+      {/* Farmer feedback */}
+      <div className="mb-8">
+        <FeedbackForm />
       </div>
 
       {/* Outlier validation summary + News sidebar */}
